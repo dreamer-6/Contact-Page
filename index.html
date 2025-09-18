@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registration contact page">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="resources/Logo.svg" alt="Becov Logo">
+    </header>
+    <main>
+        <section id="top">
+            <h1>Interested in our business pricing?</h1>
+            <p>Fill out the form to view details and we’ll contact you as soon as possible.</p>
+        </section>
+        <section class="contact">
+            <form action="login.html" method="post">
+                <div class="first-block">
+                    <label class="title" for="name">Name
+                        <input type="text" id="name" placeholder="Ethan Johnson" required>
+                    </label>
+                    <label class="title" for="email">Company Email
+                        <input type="email" id="email" placeholder="ethan@jhonson.com" required>
+                    </label>
+                    <label class="title" for="size">Company Size
+                        <select name="company-size" id="size">Subject
+                            <option value="50-100">50-100 employees</option>
+                            <option value="100-500">100-500 employees</option>
+                            <option value="500-1000">500-1000 employees</option>
+                        </select>
+                    </label>
+                    <label class="title" for="subject">Subject
+                        <select name="subject" id="subject">
+                            <option value="landing-page">Building Landing Page</option>
+                            <option value="portfolio">Portfolio</option>
+                            <option value="shopping">Shopping Site</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="second-block">
+                    <label class="title" for="message">Message
+                        <textarea name="message" id="message" placeholder="50-100 employees" rows="10"></textarea>
+                    </label>
+                    <button id="sales-button" type="submit" name="sales"><a id="sale-link" href="#sales">Contact Sales</a></button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
