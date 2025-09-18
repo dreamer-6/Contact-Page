@@ -14,6 +14,7 @@ body{
     height: 100%;
     background: linear-gradient(to bottom right , #B4436D,#4036A9);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 header{
     width: 100%;
@@ -61,7 +62,7 @@ input,select,textarea,button{
     padding: 1em;
     background-color: #f9fafc;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     margin:0.5em 0;
 }
 input::placeholder,
@@ -70,19 +71,16 @@ textarea::placeholder{
     font-weight: 500;
     color: var(--placeholder-text);
 }
-input:focus,textarea:focus{
+input:focus,textarea:focus,select:focus{
     outline: none;
     box-shadow:2px 2px 5px #535457;
 }
 button{
-   margin-top: 1.5em;
-   cursor: pointer;
-}
-#sale-link{
+    margin-top: 1.5em;
+    cursor: pointer;
     color: var(--purple);
     font-weight: 800;
     font-size: 0.8rem;
-    text-decoration: none;
 }
 @media(min-width:640px){
     #top h1{
@@ -127,8 +125,11 @@ button{
     input, select{
         width: max(100%, 400px)
     }
-    #sale-link{
+    button{
         font-size: 1.1rem;
+    }
+    .title{
+        font-size: 0.875rem;
     }
 }
 @media screen and (min-width:1280px) {
